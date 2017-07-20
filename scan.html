@@ -5,7 +5,7 @@
     <title>QR scan</title>
     <!--
       instascan.min.js license:
-      
+
       The MIT License (MIT)
 
       Copyright (c) 2016 Chris Schmich
@@ -32,7 +32,7 @@
   </head>
   <body>
     <div>
-      <input type="text" class="scanContent" style="width:500px">
+      <input type="text" id="scanContent" style="width:500px">
     </div>
     <div>
       <button class="button-startScan" onclick="startScan();">Scan</button>
@@ -45,7 +45,7 @@
       var scanner;
       scanner = new Instascan.Scanner({ video: document.getElementById('preview') });
       scanner.addListener('scan', function (content) {
-      	$('.scanContent').val(content);
+      	document.getElementById("scanContent").value = content;
       	stopScan();
       	document.querySelector('input').select();
 		    document.execCommand('copy');
