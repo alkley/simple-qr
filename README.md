@@ -1,4 +1,4 @@
-# simple-qr
+# Simplest QR generator
 Simplest way to generate QR codes. 
 
 Works completely offline. 
