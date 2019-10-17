@@ -10,3 +10,7 @@ Just type the content yopu wish encoded in the QR code into the input field and 
 Scanning QR codes
 -----------------
 Click on scan to start webcam capture. Once a QR code is recognized, scanning stops and the data is displayed.
+
+Project status
+--------------
+Is considered feature complete. If anything breaks please report.
